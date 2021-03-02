@@ -24,7 +24,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.messaging.Message;
 
 // @Provider("AmqpProvider")
-@Provider("pactflow-example-provider-java-kafka")
+@Provider("example-provider-java-kafka")
 @PactBroker(scheme = "https", host = "${PACT_BROKER_HOST}", tags = { "master", "prod", "latest" }, authentication = @PactBrokerAuth(token = "${PACT_BROKER_TOKEN}"))
 @PactFolder("src/test/resources/amqp_pacts")
 public class ProductsKafkaProducerTest {
