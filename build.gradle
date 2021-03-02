@@ -46,7 +46,7 @@ pact {
     }
 
     serviceProviders {
-			"example-provider-java-kafka" {
+			"pactflow-example-provider-java-kafka" {
  				fromPactBroker {
         	selectors = latestTags('master','prod') // specify your tags here. You can leave this out to just use the latest pacts
       	}
